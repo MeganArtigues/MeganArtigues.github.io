@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
   
@@ -32,6 +34,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#edu">EDUCATION</a></li>
+        <li><a href="#cs">Why CS?</a></li>
         <li><a href="#work">WORK EXPERIENCE</a></li>
         <li><a href="#recs">RECOMMENDATIONS</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -43,7 +46,9 @@
 <!-- Container (Home) -->
 <div id="myPage" class="container text-center">
   <h3>Welcome!</h3>
-  <p>---</p>
+  <p>Hi, I'm Megan! I'm a current student at the University of Georgia excited to graduate in December 2017 with a B.S. in Computer Science. Woot!
+    <br>
+    </p>
   <br>
     <!--
   <div class="row">
@@ -180,8 +185,28 @@
       </div>
     </div>
 
+<!-- Container (Why CS?) -->
+<div id="cs" class="bg-2">
+  <div class="container-fluid">
+      <h3 class="text-center">So, Why did I chose CS?</h3>
+      <hr><br>
+      <p>For many that know me, it's no secret that my first passion is for animals. Horses and dogs, particularly.
+      Because of this, many don't understand why I'm pursuing computer science and not becoming a vet or something.
+      <br><br>
+      To keep a long story short, I did pursue an animal based career for one and a half years. I spent my first few semesters of college at a small private university called Midway College (now Midway University) pursuing Equine Health and Rehabilitation. It was a lot of fun, and I got to learn about horses all day every day. A dream come true, right? Well, yes, but ultimately I saw this career path interfering too much with my true life goals - having time for family and my own pets. As many will tell you, a career with animals rarely leaves you with time or energy for your own furkids.
+      <br><br>
+      Ultimately, that year and a half after high school allowed me to learn, mature, and grow to evaluate the things that I really want in life. And these newfound priorities lead to me searching for a new career path. I researched and took a few courses that interested me to see what route I may take, and in the end, somehow I found computer science. I took Intro to Programming and instantly fell in love - finding my second passion.
+      <br><br>
+      Why do I love CS so much? It's challenging! I'm a person who loves learning new things and solving problems. I'm a busy bee, always looking for new tasks, new challenges, anything fun to strive for. Programming allows me to work hands-on, see instant results, and since it's always changing, I always have that new challenge. There's so many languages, so many disciplines, just so much you can do with computer science. It's crazy! It's near impossible to work with technology and be bored. There's always a new area worth exploring, and that's something many other career paths don't get to claim as highly as CS does.
+      <br><br>
+      All in all, programming is just plain awesome! 
+    
+      </p>
+    </div>
+</div>
+    
 <!-- Container (Work Experience) -->
-<div id="work" class="bg-2">
+<div id="work" class="bg-1">
   <div class="container-fluid">
       <h3 class="text-center">WORK EXPERIENCE</h3>
       <hr><br>
@@ -191,7 +216,7 @@
               <img src="uga.jpg" class="media-object" style="width:60px">
           </div>
           <div class="media-body">
-            <h4 class="media-heading">Student Programmer
+            <h4 class="media-heading2">Student Programmer
                 <p class="dates">February 2017 – Present</p>
                 <p class="location">Water Resources Remote Sensing Laboratory</p>
               </h4>
@@ -212,7 +237,7 @@
               <img src="tlc.jpg" class="media-object" style="width:60px">
           </div>
           <div class="media-body">
-            <h4 class="media-heading">Owner/Operator
+            <h4 class="media-heading2">Owner/Operator
                 <p class="dates">Summer 2011 – Present</p>
                 <p class="location">TLC Horse Grooming</p>
               </h4>
@@ -232,7 +257,7 @@
               <img src="steadfast.png" class="media-object" style="width:60px">
           </div>
           <div class="media-body">
-            <h4 class="media-heading">Equine Care Employee
+            <h4 class="media-heading2">Equine Care Employee
                 <p class="dates">January 2012 – Present</p>
                 <p class="location">Steadfast Farms LLC.</p>
               </h4>
@@ -251,15 +276,58 @@
     </div>
     
     <!-- Container (Recommendations) -->
-<div id="recs" class="bg-1">
+<div id="recs" class="bg-2">
   <div class="container-fluid">
       <h3 class="text-center">Recommendations</h3>
       <hr><br>
       
-      <p class="comment">A few kind words from my clients and employers
+      <p class="comment">Have something the world should know about me? Write a short recommendation on my behalf! I'd love to hear from you
       <span class="glyphicon glyphicon-heart"></span>
       </p>
           
+      <div class="recForm">
+          <form class="form-inline">
+              
+              <div class="form-group">
+                <label for="fname" required>
+                    <span style="color:red">*</span>
+                    First Name:
+                  </label>
+                  <input type="text" class="form-control" id="fname">
+              </div>
+              &emsp;
+              <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control" id="lname">
+              </div>
+              
+               &emsp;
+              <div class="form-group">
+                  <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                          Relation to Me
+                          <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" >
+                      <li><a href="#">Coworker</a></li>
+                      <li><a href="#">Friend</a></li>
+                      <li><a href="#">Employer</a></li>
+                      <li><a href="#">Relative</a></li>
+                      <li><a href="#">Classmate</a></li>
+                      <li><a href="#">Other</a></li>
+                  </ul>
+                  </div>
+              </div>
+               <br><br>
+              
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10" style="width: 70%;"></textarea>
+      
+              <br><br>
+              <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          
+          <br>
+      </div>
       
   </div>
 </div>
@@ -269,32 +337,13 @@
 <div id="contact" class="container-fluid">
   <h3 class="text-center">Contact</h3>
     
-  <div class="row">
-    <div class="col-md-4">
-      <p>Want to get in touch with me? Drop a note.</p>
+  <div class="text-center">
+      <p>Want to get in touch with me?</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Atlanta, Ga</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: (6780232-1638)</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: (678)232-1638</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: meganartigues@gmail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
+      <p><span class="fa fa-linkedin-square"></span>LinkedIn: www.linkedin.com/in/megan-artigues-74449612a </p>
   </div>
-  <br>
 </div>
 
 <!-- Footer -->
