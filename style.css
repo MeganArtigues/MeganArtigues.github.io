@@ -149,6 +149,11 @@ body {
       resize: none;
   }
 
+.myimage{
+    display: block;
+    margin: 0 auto;    
+}
+
 .media-heading2{
     margin: 0px;
     margin-bottom: 5px;
